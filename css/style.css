@@ -2,14 +2,94 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 header{
     padding-top: 25px;
 }
+
 header img{
     max-height: 25px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
+.arrow {
+    border: solid rgb(255, 0, 0);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .slogan{
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 5%;
+    width: 100%;
+}
+.slogan i{
+    margin-right: 1%;
+    margin-bottom: 0.3%;
+}
+.slogan h1{
+    font-size: 50px;
+}
+.slogan p{
+    font-size: 25px;
+    margin-left: 3%;
+    color: rgb(207, 207, 207);
+}
+.nabidka {
+    position: relative;
+    display: inline-block;
+    
+  }
+.nabidka:hover{
+    color: red;
+}
+  .nabidka-content {
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .nabidka-content ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  } 
+  .nabidka:hover .nabidka-content {
+    display: block;
+  }
+  
 
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 12px;
+    }
+    header{
+        padding-top: 15px;
+    }
+    img{
+        max-width: 600px;
+    }
+    header img{
+        max-height: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    
+
+  }
